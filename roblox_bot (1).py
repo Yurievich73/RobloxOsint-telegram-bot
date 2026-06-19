@@ -5,12 +5,13 @@ import threading
 import requests
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+import os
 
 # Кеш ников — чтобы не делать лишние запросы к Roblox API
 username_cache = {}
 
 # --- НАСТРОЙКИ ---
-BOT_TOKEN = "8856024899:AAH7aRc-_01lKNBsOjYdjH4yTcn94vovu88"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHECK_INTERVAL = 1
 DATA_FILE = "users.json"
 
