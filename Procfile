@@ -1,1 +1,1 @@
-worker: python roblox_bot.py
+worker: python "roblox_bot (1).py"
